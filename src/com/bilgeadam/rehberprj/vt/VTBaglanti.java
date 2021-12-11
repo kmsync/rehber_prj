@@ -12,14 +12,7 @@ public class VTBaglanti {
         return conn;
     }
 
-    public static boolean baglantiKapat(Connection conn)
-    {
-        try {
+    public static void baglantiKapat(Connection conn) throws SQLException {
             conn.close();
-            return true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
     }
 }
