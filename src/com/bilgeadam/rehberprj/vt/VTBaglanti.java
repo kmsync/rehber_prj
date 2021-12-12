@@ -7,7 +7,7 @@ public class VTBaglanti {
     public static Connection baglantiGetir() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
 
-        Connection conn = DriverManager.getConnection("jdbc:posgresql://localhost:5432/rehberdb", "postgres", "postgres");
+        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/rehberdb", "postgres", "postgres");
 
         return conn;
     }
